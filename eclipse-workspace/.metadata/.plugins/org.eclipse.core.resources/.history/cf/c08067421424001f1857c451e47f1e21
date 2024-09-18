@@ -1,0 +1,27 @@
+package module.myproject;
+
+
+
+public class errorhanding {
+
+	public static void main(String[] args) {
+		System.out.println("program is starte");
+		
+		try
+		{
+		String s=null;
+		System.out.println(s.length());
+		}
+		catch ( Exception e)
+		{
+			System.out.println("error message");
+			System.out.println(e.getMessage());
+
+
+		}
+		System.out.println("program is completed");
+		System.out.println("program is exited");
+		
+	}
+
+}

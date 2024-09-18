@@ -1,0 +1,14 @@
+package day2;
+
+public class Datatype {
+
+	public static void main(String[] args) {
+           //Numeric data types
+		
+	   int a=100, b=200;
+System.out.println("the value of a is:"+a);
+System.out.println("the value of a is:"+b);		
+System.out.println("the value of a is:"+(a+b);		
+	}
+
+}

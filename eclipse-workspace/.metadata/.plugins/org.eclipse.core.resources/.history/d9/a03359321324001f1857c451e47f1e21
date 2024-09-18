@@ -1,0 +1,19 @@
+package module.myproject;
+
+
+
+public class errorhanding {
+
+	public static void main(String[] args) {
+		System.out.println("program is starte");
+		
+		
+		String s=null;
+		System.out.println(s.length());
+		
+		System.out.println("program is completed");
+		System.out.println("program is exited");
+		
+	}
+
+}

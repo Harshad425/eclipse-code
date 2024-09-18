@@ -1,0 +1,16 @@
+package day3;
+
+public class ternaryoperator {
+
+	public static void main(String[] args) {
+	 
+		// var=exp ? reslut 1 : reslult 2 ;
+
+		// ex 1
+		int a=100, b=200;
+		
+	    int x= a<b ? 100: 200;
+	    System.out.println(x);
+	}
+
+}

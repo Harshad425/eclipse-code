@@ -1,0 +1,36 @@
+package day3;
+
+public class assigmentoperator {
+
+	public static void main(String[] args) {
+	
+		// assigment = += -+ *= /= %=
+		
+		// ex 1
+	     /*int a=10;
+	       a+=5;     //a=a+5;
+	     System.out.println(a);	*/
+	     
+	     // ex2
+	     
+	    /* int a=10;
+	      a-=5;     //a=a-5;
+	     System.out.println(a);*/
+	     
+	     // ex 3
+	     /*int a=10;
+	     a*=2; 
+	     System.out.println(a);*/
+	     
+	     // ex 4 
+	      int a=10;
+	      a%=2;
+	      System.out.println(a);
+	      
+	      // ex 5
+	       int a=10;
+	       a/=2;
+
+	}
+     
+}

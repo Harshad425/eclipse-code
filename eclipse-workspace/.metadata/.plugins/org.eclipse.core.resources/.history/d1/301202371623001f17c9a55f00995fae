@@ -1,0 +1,23 @@
+package interfacewithinherimodule;
+
+public class c1 implements i1,i2
+{
+	public void m1()
+	{
+		System.out.println(x);
+	}
+	
+	public void m2()
+	{
+		System.out.println(y);
+	}
+
+	
+
+
+
+	public static void main(String[] args) {
+		
+	}
+
+}

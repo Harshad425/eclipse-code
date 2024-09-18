@@ -1,0 +1,88 @@
+package Loginwithseleniumtestng;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class Logintestng {
+
+	WebDriver driver;
+
+	@Test(priority = 1)
+	void openapp_tc1() throws InterruptedException {
+		driver = new ChromeDriver();
+
+		// Set implicit wait
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
+		// Navigate to login page
+		driver.get("http://hrmdev.pixlogixservice.com/login");
+
+	}
+
+	
+	@Test(priority = 2)
+	void loginwith_nagativevalue_tc2() throws InterruptedException {
+		Thread.sleep(5000);
+		// Perform login - positive with both
+		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("bidizfdfdhgfdgdymu@mailinator.com");
+
+		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("#Sagggfdhdfhdgfdar@307");
+
+		driver.findElement(By.xpath("//button[@id='kt_sign_in_submit']")).click();
+	}
+		
+		
+	
+	@Test(priority = 3)
+		void loginwith_blankbalue_tc4() throws InterruptedException {
+			Thread.sleep(5000);
+			// Perform login - positive with both
+			driver.findElement(By.xpath("//input[@id='email']")).sendKeys("null");
+
+			driver.findElement(By.xpath("//input[@id='password']")).sendKeys("null");
+
+			driver.findElement(By.xpath("//button[@id='kt_sign_in_submit']")).click();
+		
+	}
+			@Test(priority = 4)
+			void loginwith_validuser_invalidpass_tc5() throws InterruptedException {
+				Thread.sleep(5000);
+				// Perform login - positive with both
+				driver.findElement(By.xpath("//input[@id='email']")).sendKeys("bidizfdymu@mailinator.com");
+
+				driver.findElement(By.xpath("//input[@id='password']")).sendKeys("#Saggfdagfhfdhr@307");
+
+				driver.findElement(By.xpath("//button[@id='kt_sign_in_submit']")).click();
+			}
+		
+		
+				@Test(priority = 5)
+				void loginwith_valid_blank_tc6() throws InterruptedException {
+					Thread.sleep(5000);
+					// Perform login - positive with both
+					driver.findElement(By.xpath("//input[@id='email']")).sendKeys("bidizfhdhdfdymu@mailinator.com");
+
+					driver.findElement(By.xpath("//input[@id='password']")).sendKeys("null");
+
+					driver.findElement(By.xpath("//button[@id='kt_sign_in_submit']")).click();
+				}
+		
+					@Test(priority = 7)
+					void loginwith_validpass_invaliduser_tc7() throws InterruptedException {
+						Thread.sleep(5000);
+						// Perform login - positive with both
+						driver.findElement(By.xpath("//input[@id='email']")).sendKeys("bidizfdymufdfafafdsdafadsdssfd@mailinator.com");
+
+						driver.findElement(By.xpath("//input[@id='password']")).sendKeys("#Sagar@307");
+
+						driver.findElement(By.xpath("//button[@id='kt_sign_in_submit']")).click();
+					}
+				
+		
+	}
+
+

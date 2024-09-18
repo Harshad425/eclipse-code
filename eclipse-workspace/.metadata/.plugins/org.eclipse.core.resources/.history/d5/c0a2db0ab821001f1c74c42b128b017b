@@ -1,0 +1,33 @@
+package Inheritancee2;
+
+
+class A {
+    int a = 10;
+
+    void amethod() {
+        System.out.println(a);
+    }
+}
+
+class B extends A {
+    int b = 20;
+
+    void bmethod() {
+        System.out.println(b);
+    }
+}
+
+public class Inheritanc {
+    public static void main(String[] args) {
+        // Create an instance of class B
+        B obj = new B();
+
+        // Accessing and printing values of a and b
+        System.out.println(obj.a);
+        System.out.println(obj.b);
+
+        // Calling methods from class A and B
+        obj.amethod();
+        obj.bmethod();
+    }
+}

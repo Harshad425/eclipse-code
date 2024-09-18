@@ -1,0 +1,180 @@
+package Recruitmenttool;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Loginmodulein {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		   WebDriver driver = new ChromeDriver();
+
+		   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		   
+		   successfulLogin(driver, wait);
+	        bothInvalidLogin(driver, wait);
+	        oneInvalidOneValidLogin(driver, wait);
+	        passInvalidLogin(driver, wait);
+	        bothBlankLogin(driver, wait);
+	        
+	        driver.quit();
+	}
+	        
+	        public static void successfulLogin(WebDriver driver, WebDriverWait wait) throws InterruptedException {
+	        // Navigate to login page
+	        driver.get("http://hrmdev.pixlogixservice.com/login");
+
+	        // Perform login  - positive with both
+	        
+	        System.out.println("Test case 1: Successful login starting");
+	        
+	        
+	        WebElement emailField1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='email']")));
+	        
+	        WebElement PasswordField2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='password']")));
+	       
+	        emailField1.clear();
+	        emailField1.sendKeys("bidizymu@mailinator.com");
+
+	        PasswordField2.clear();
+	        PasswordField2.sendKeys("#Sagar@307");
+	        
+	        driver.findElement(By.xpath("//button[@id='kt_sign_in_submit']")).click();
+	        
+	        System.out.println("Successful login");
+	        
+	        Thread.sleep(5000);
+	        }
+	        
+	        
+	        public static void bothInvalidLogin(WebDriver driver, WebDriverWait wait) throws InterruptedException {
+ // Perform login  - both nagative
+	        	driver.get("http://hrmdev.pixlogixservice.com/login");
+	        System.out.println("Test case 2:both invalid");
+	        
+	        
+	        WebElement emailField3 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='email']")));
+	        
+	        WebElement PasswordField4 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='password']")));
+	       
+	        emailField3.clear();
+	        emailField3.sendKeys("bidizymhhhgdhugfs@mailinator.com");
+
+	        PasswordField4.clear();
+	        PasswordField4.sendKeys("#Sabnhggsar@307");
+	        
+	        driver.findElement(By.xpath("//button[@id='kt_sign_in_submit']")).click();
+	        
+	        System.out.println(" login failed");
+	     
+	        Thread.sleep(5000);
+	        
+	        }
+	        
+	        public static void oneInvalidOneValidLogin(WebDriver driver, WebDriverWait wait) throws InterruptedException {
+	        	driver.get("http://hrmdev.pixlogixservice.com/login");
+ // Perform login  - one invalid and valid	        
+	        System.out.println("Test case 3: mail invalid and valid	");
+	        
+	        
+	        WebElement emailField5 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='email']")));
+	        
+	        WebElement PasswordField6 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='password']")));
+	       
+	        emailField5.clear();
+	        emailField5.sendKeys("bidizysdgdmugdsgs@mailinator.com");
+
+	        PasswordField6.clear();
+	        PasswordField6.sendKeys("#Sagar@307");
+	        
+	        driver.findElement(By.xpath("//button[@id='kt_sign_in_submit']")).click();
+	        
+	        System.out.println("login failed login");
+	      
+	        Thread.sleep(5000);
+	        }
+	        
+ 
+	        public static void passInvalidLogin(WebDriver driver, WebDriverWait wait) throws InterruptedException {
+	        // Perform login  - pass invalid and valid	
+	        	driver.get("http://hrmdev.pixlogixservice.com/login");
+	        System.out.println("Test case 1:  pass invalid and valid	");
+	        
+	        
+	        WebElement emailField7 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='email']")));
+	        
+	        WebElement PasswordField8 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='password']")));
+	       
+	        emailField7.clear();
+	        emailField7.sendKeys("bidizymu@mailinator.com");
+
+	        PasswordField8.clear();
+	        PasswordField8.sendKeys("#Sagafgfr@307");
+	        
+	        driver.findElement(By.xpath("//button[@id='kt_sign_in_submit']")).click();
+	        
+	        System.out.println("login failed");
+	     
+	        Thread.sleep(5000);  }
+	        
+	        public static void bothBlankLogin(WebDriver driver, WebDriverWait wait) throws InterruptedException {
+	        
+ // Perform login  -both blank
+	        	driver.get("http://hrmdev.pixlogixservice.com/login");
+	        System.out.println("Test case 1: Successful login starting");
+	        
+	        
+	        WebElement emailField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='email']")));
+	        
+	        WebElement PasswordField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='password']")));
+	       
+	        emailField.clear();
+	        emailField.sendKeys("");
+
+	        PasswordField.clear();
+	        PasswordField.sendKeys("");
+	        
+	        driver.findElement(By.xpath("//button[@id='kt_sign_in_submit']")).click();
+	        
+	        System.out.println("login failed with blank value");
+	     
+	        Thread.sleep(5000);
+	        }
+	        
+	        
+	}
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	     
+	        

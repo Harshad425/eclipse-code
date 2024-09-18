@@ -1,0 +1,15 @@
+package cont;
+
+import polimethod.cont;
+
+public class Boxmain {
+
+	public static void main(String[] args) {
+		Box c=new Box();
+		
+				
+			System.out.println(c.volume());
+				
+	}
+
+}

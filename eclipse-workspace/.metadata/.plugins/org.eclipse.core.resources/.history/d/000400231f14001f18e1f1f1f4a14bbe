@@ -1,0 +1,28 @@
+package day5;
+
+import java.util.Scanner;
+
+public class takinginputfromclass {
+ public static void main(String[] args) {
+//*	int num=20;
+	
+	Scanner sc=new Scanner(System.in);
+	 
+	//System.out.println("Enter a number:");
+	
+	//int num=sc.nextInt();
+	 
+
+	 
+	 //System.out.println("Enter decimal num");
+
+	 //double num=sc.nextDouble();
+	// System.out.println("Given value is:" +num);
+	 
+	System.out.println("Enter your city");
+	 String city=sc.next();
+	 System.out.println("Your city is :" +city); 
+	 
+	}
+
+}

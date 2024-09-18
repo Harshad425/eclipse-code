@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Varsity_mentor.TC_20_It_should_not_submit"/>
+      <class name="Varsity_mentor.TC_3_It_should_not_submit"/>
+      <class name="Varsity_mentor.TC_17_It_should_not_submit"/>
+      <class name="Varsity_mentor.TC_13_It_should_not_submit"/>
+      <class name="Varsity_mentor._TC_24_It_should_be_submit"/>
+      <class name="Varsity_mentor.TC_2_It_should_be_submit"/>
+      <class name="Varsity_mentor.TC_18_It_should_not_submit"/>
+      <class name="Varsity_mentor.TC_23_It_should_be_submit"/>
+      <class name="Varsity_mentor.TC_9_It_should_not_submit"/>
+      <class name="Varsity_mentor.TC_11_It_should_not_submit"/>
+      <class name="Varsity_mentor.TC_1_It_should_be_submit"/>
+      <class name="Varsity_mentor.TC_5_It_should_be_submit"/>
+      <class name="Varsity_mentor.TC_10_It_should_not_submit"/>
+      <class name="Varsity_mentor.TC_22_It_should_not_submit"/>
+      <class name="Varsity_mentor.TC_19_It_should_not_submit"/>
+      <class name="Varsity_mentor.TC_16_It_should_not_submit"/>
+      <class name="Varsity_mentor.TC_14_It_should_not_submit"/>
+      <class name="Varsity_mentor.TC_7_It_should_not_submit"/>
+      <class name="Varsity_mentor.TC_21_It_should_not_submit"/>
+      <class name="Varsity_mentor.TC_6_It_should_not_submit"/>
+      <class name="Varsity_mentor.TC_4_It_should_be_submit"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

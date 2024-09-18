@@ -1,0 +1,18 @@
+package automation;
+
+public class stringconceptother {
+
+	public static void main(String[] args) {
+		
+		String s="Welcome";
+		String rev="";
+	
+		for(int i=s.length()-1;i>=0;i--);
+		{
+	
+			System.out.println();
+			s.charAt(i)
+		}
+	}
+
+}

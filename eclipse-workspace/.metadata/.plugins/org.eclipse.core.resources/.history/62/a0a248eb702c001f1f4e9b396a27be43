@@ -1,0 +1,39 @@
+package day4;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class xpath {
+
+	public static void main(String[] args) {
+		
+		// absolute xpath
+		// relative xpath
+		
+		
+		// absoute path 
+		
+		// html/body/div/div/div2/a/image/
+		
+		
+		
+		 WebDriver driver=new ChromeDriver();
+			
+			driver.get("https://demo.opencart.com//");
+			
+			driver.manage().window().maximize();
+			
+		driver.findElement(By.xpath("//input[@placeholder='Search']")).sendKeys("TShirts");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

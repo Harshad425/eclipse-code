@@ -1,0 +1,26 @@
+package module.myproject;
+
+
+
+public class errorhanding {
+
+	public static void main(String[] args) {
+		
+		try
+		{
+		String s="welcome";
+		}
+		catch(java.lang.NumberFormatException e)
+		{
+			
+		}
+		System.out.println("program is completed");
+		int num=Integer.parseInt(s);
+		System.out.println(num);
+
+		System.out.println("program is completed");
+		System.out.println("program is exited");
+		
+	}
+
+}

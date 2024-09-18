@@ -1,0 +1,68 @@
+package day5;
+
+import java.util.Scanner;
+
+public class takinginputfromclass {
+ public static void main(String[] args) {
+//*	int num=20;
+	
+	//Scanner sc=new Scanner(System.in);
+	 
+	//System.out.println("Enter a number:");
+	
+	//int num=sc.nextInt();
+	 
+
+	 
+	 //System.out.println("Enter decimal num");
+
+	 //double num=sc.nextDouble();
+	// System.out.println("Given value is:" +num);
+	 
+	//System.out.println("Enter your city");
+	// String city=sc.next();
+	//.out.println("Your city is :" +city); 
+	 
+	
+	//Scanner sc=new Scanner(System.in);
+	
+	//System.out.println("Enter your first number");
+	//int num1=sc.nextInt();
+	
+	//System.out.println("Enter second number");
+	//int num2=sc.nextInt();
+	
+	//System.out.println("addtions of 2 number:"+(num1+num2));
+
+	/* System.out.println("Enter name:");
+		String name=sc.next();
+		System.out.println("Your name is: "+name);
+	
+	
+		System.out.println("Enter Your age:");
+		int age=sc.nextInt();
+		System.out.println("Your age is"+age);
+	
+		System.out.println("Enter unknow value");
+		Object value=sc.next();
+		System.out.println(value);*/
+	
+	int a[]=new int[5];
+	 
+	Scanner sc=new Scanner(System.in);
+	
+	for(int i=0;i<a.length;i++)
+	{
+		System.out.println("Enter a value for position "+i+ ":");
+		a[i]=sc.nextInt();
+	}
+	 
+	System.out.println("Printing array element.........");
+	System.out.println(Arrays.toString(a));
+	
+	
+	
+	
+	}
+
+}

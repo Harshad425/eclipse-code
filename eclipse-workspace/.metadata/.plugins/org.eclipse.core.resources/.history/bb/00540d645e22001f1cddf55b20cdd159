@@ -1,0 +1,47 @@
+package overridingpackage;
+
+
+class bank
+{
+	double roi()
+	{
+		return 0;
+		
+	}
+}
+
+class icici extends bank
+{
+	double roi()
+	{
+		return 11.4;
+		
+	}
+}
+
+
+class hdfc extends bank
+{
+	double roi()
+	{
+		return 33.5;
+		
+	}
+}
+
+
+
+
+
+public class overriding {
+
+	public static void main(String[] args) {
+	  
+		
+		icici ic=new icici();
+		
+		System.out.println(ic.roi());
+
+	}
+
+}

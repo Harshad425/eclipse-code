@@ -1,0 +1,42 @@
+package day5;
+
+public class arrayrepet {
+
+	public static void main(String[] args) {
+		/*int a[]= {10,20,30,40,50};
+		int search_element=300;
+		boolean status=false;
+		
+		for(int i=0;i<a.length-1;i++)
+		{
+			if(a[i]==search_element)
+			{
+				System.out.println("Element found");
+				status=true; 
+				break;
+			}
+
+	}
+		if(status=false)
+		{
+		System.out.println("Element not found");	
+		}*/
+		
+		int a[]= {100,200,100,300,100,400,100,200};
+		int repeat=100;
+		int count=0;
+		
+		for(int value:a)
+		{
+			if(value==repeat)
+{
+	
+	count++;
+}
+		}
+		{
+			System.out.println(count);	
+		}
+
+}
+}

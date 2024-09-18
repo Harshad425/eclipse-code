@@ -1,0 +1,5 @@
+package interfacewithinherimodule;
+
+public interface i1 {
+
+}

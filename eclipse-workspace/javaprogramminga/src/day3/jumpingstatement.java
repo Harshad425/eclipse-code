@@ -1,0 +1,36 @@
+package day3;
+
+public class jumpingstatement {
+
+	public static void main(String[] args) {
+		// 1.......10 number
+		
+	/*for(int i=1; i<=100; ++i)
+	{
+
+		if (i==10)
+		{
+			break;
+		}
+		System.out.println(i);*/
+		
+		for(int i=1; i<=100; ++i)
+		{
+
+			if (i==10 || i==12 || i==99)
+			{
+				continue;
+			}
+			System.out.println(i);
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	}
+}
+

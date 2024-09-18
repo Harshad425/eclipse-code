@@ -1,0 +1,34 @@
+package Recruitmenttool;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Openingsmodule {
+
+	public static void main(String[] args) {
+
+		
+		
+		
+		WebDriver driver=new ChromeDriver();
+		
+		driver.get("http://hrmdev.pixlogixservice.com/recruitment-tool/openings");
+		
+		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("bidizymu@mailinator.com");
+		
+		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("#Sagar@307");
+		
+		driver.findElement(By.xpath("//button[@id='kt_sign_in_submit']")).click();
+		
+		
+		driver.findElement(By.xpath("//a[@class='ms-auto ms-sm-0 btn btn-md btn-primary']")).click();
+		
+		
+		
+		
+		
+		
+	}
+
+}

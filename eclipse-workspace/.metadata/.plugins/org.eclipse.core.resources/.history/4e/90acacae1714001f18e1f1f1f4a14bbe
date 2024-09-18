@@ -1,0 +1,10 @@
+package day5;
+
+public class takinginputfromclass {
+
+	int num=20;
+	System.out.println(num);
+
+	}
+
+

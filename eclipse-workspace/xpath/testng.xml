@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Varsity_mentor.Checkbox_select"/>
+      <class name="Varsity_mentor.With_new"/>
+      <class name="Varsity_mentor.error_message_invalid"/>
+      <class name="Varsity_mentor.select_field"/>
+      <class name="Varsity_mentor.With_Returning"/>
+      <class name="Varsity_mentor.Returnig_page_show"/>
+      <class name="Varsity_mentor.With_blankvalue"/>
+      <class name="Varsity_mentor.Requirefield_message"/>
+      <class name="Varsity_mentor.Button_enable_check"/>
+      <class name="Varsity_mentor.Nagative_error_message"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="pixlogix.Tc_4_It_should_not_submit"/>
+      <class name="pixlogix.Tc_15_it_should_not_submit"/>
+      <class name="pixlogix.Tc_22_it_should_not_submit"/>
+      <class name="pixlogix.Tc_24_it_should_not_submit"/>
+      <class name="pixlogix.Tc_1_It_should_be_submit"/>
+      <class name="pixlogix.Tc_8_it_should_not_submit"/>
+      <class name="pixlogix.Tc_17_it_should_not_submit"/>
+      <class name="pixlogix.Tc_6_it_should_not_submit_"/>
+      <class name="pixlogix.Tc_21_it_should_not_submit"/>
+      <class name="pixlogix.Tc_12_it_should_not_submit"/>
+      <class name="pixlogix.Tc_14_it_should_not_submit"/>
+      <class name="pixlogix.Tc_3_logo_should_be_visible"/>
+      <class name="pixlogix.Tc_10_dropdown_value_should_be_select"/>
+      <class name="pixlogix.Tc_16_it_should_not_submit"/>
+      <class name="pixlogix.Tc_19_it_should_not_submit"/>
+      <class name="pixlogix.Tc_11_it_should_not_submit"/>
+      <class name="pixlogix.Tc_26_it_should_be_submit"/>
+      <class name="pixlogix.Tc_9_it_should_not_submit"/>
+      <class name="pixlogix.Tc_2_It_should_not_submit"/>
+      <class name="pixlogix.Tc_18_it_should_not_submit"/>
+      <class name="pixlogix.Tc_13_it_should_not_submit"/>
+      <class name="pixlogix.Tc_7_it_should_not_submit"/>
+      <class name="pixlogix.Tc_25_it_should_not_submit"/>
+      <class name="pixlogix.Tc_5_Resume_should_upload_"/>
+      <class name="pixlogix.Tc_20_it_should_not_submit"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
